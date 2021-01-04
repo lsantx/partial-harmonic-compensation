@@ -1,0 +1,296 @@
+Plecs {
+  Name          "Amplitude_harmonicos"
+  Version       "3.7"
+  CircuitModel  "DiscStateSpace"
+  StartTime     "0.0"
+  StopTime      "2.2"
+  Solver        "FixedStepDiscrete"
+  MaxStep       "1e-3"
+  InitStep      "-1"
+  FixedStep     "passo"
+  Refine        "1"
+  ZCStepSize    "1e-9"
+  RelTol        "1e-5"
+  AbsTol        "1e-5"
+  TurnOnThreshold "0"
+  SyncFixedStepTasks "2"
+  UseSingleCommonBaseRate "2"
+  LossVariableLimitExceededMsg "3"
+  NegativeSwitchLossMsg "3"
+  DivisionByZeroMsg "2"
+  StiffnessDetectionMsg "2"
+  MaxConsecutiveZCs "1000"
+  AssertionAction "1"
+  InitializationCommands base64 "JSBTeXN0ZW0gUGFyYW1ldGVycwpWZGMgPSAzOTA7CmZzI"
+"D0gMTIwMDA7CmZuID0gNjA7CmZzYW1wbGUgPSBmczsKVHMgPSAxL2ZzYW1wbGU7CnBhc3NvID0gMS"
+"8oZnMqMjU2KTsKVmNtID0gNTsKCiUgc3RhcnRpbmcgdGltZSBvZiBoYXJtb25pYyBjb21wZW5zYXR"
+"pb24gKHRoKSBhbmQgcmVhY3RpdmUgcG93ZXIgY29tcGVuc2F0aW9uICh0cikKdGggPSAwLjY7CnRy"
+"ID0gMC40OwolIEdyaWQgUGFyYW1ldGVycwpTY2MgPSAxZTY7ClZybXMgPSAyMjA7ClZfcmVkZSA9I"
+"DIyMCpzcXJ0KDIpOwpYX1IgPSAxMDsKTGdfciA9IChWcm1zXjIpLygyKnBpKmZuKlNjYypzcXJ0KD"
+"ErKFhfUl4oLTIpKSkpOwpSZ19yID0gMipwaSo2MCpMZ19yL1hfUjsKCiUlIExvYWQgUGFyYW1ldGV"
+"ycyAgICAgICAgICAgICAgICAgICAgIApmbiA9IDYwOwpQbCA9IDI5MDA7ClpsID0gKFZybXMpXjIv"
+"KFBsKTsKUWwgPSAxMDAwOwpMbG9hZCA9IChWcm1zKV4yLygyKnBpKmZuKlFsKTsKCiUgU09HSS1QT"
+"EwKV24gPSAyKnBpKmZuOwp3bl9wbGwgPSAxMioyKnBpOwprc2lfcGxsID0wLjUwNzsKa3BfcGxsID"
+"0gMip3bl9wbGwqa3NpX3BsbDsKa2lfcGxsID0gd25fcGxsXjI7CgolIExDTCBGaWx0ZXIKTGYgPSA"
+"xZS0zOyAKTGcgPSBMZjsgClJmID0gMipwaSpmbipMZi8yMDsgClJnID0gMipwaSpmbipMZy8yMDsg"
+"CkNmID0gMy44ZS0wNjsKUmQgPSA0OwpMdCA9IExmK0xnOwpSdCA9IFJmK1JnOwoKJSBSZXNvbmFud"
+"CBjb250cm9sbGVyClRzID0gMS9mc2FtcGxlOwpLaW4gPSAyMDAwOyAgICAgClRzID0gMS9mc2FtcG"
+"xlOwpSID0gUnQ7CkwgPSBMdDsKcm89ZXhwKFIqVHMvTCk7CktwX3JlcyAgPSAoUi8oKDEtcm9eLTE"
+"pKnNxcnQoMikpKSpzcXJ0KDIrMioocm9eLTIpLSgxK3NxcnQoNSkpKnJvXi0xKQoKJSBQSSBjb250"
+"cm9sbGVyIGZvciBkcSBjb250cm9sCmZjX2RxID0gZnMvMTA7CktwX2RxID0gMipwaSpmY19kcSooT"
+"HQpOwpLaV9kcSA9IDIqcGkqZmNfZHEqKFJ0KTsKCiUgRGMtbGluayBDb250cm9sCkNkYyA9IDMwMD"
+"BlLTY7IApmYzEgPSAzMDsKZmMyID0gZmMxLzEwOwpHID0gVl9yZWRlLygyKlZkYyk7CmtwX2RjID0"
+"gMipwaSooZmMxICsgZmMyKSpDZGMvRzsKa2lfZGMgPSA0KnBpXjIqZmMxKmZjMipDZGMvRzsKCiUg"
+"c3F1YXJlZCBEYy1saW5rIENvbnRyb2wKZmMxID0gMjA7CmZjMiA9IGZjMS8xMDsKa3Bfc2RjID0gc"
+"GkqKGZjMSArIGZjMikqQ2RjOwpraV9zZGMgPSAyKnBpXjIqZmMxKmZjMipDZGM7CgolJSBTb2xhci"
+"BQYW5lbCBQYXJhbWV0ZXJzLCAyNTBXCklzY24gPSA4LjU7ICAgICAgICAgICAgICAlQ29ycmVudGU"
+"gZGUgY3VydG8gY2lyY3VpdG8gbm9taW5hbCBkbyBwYWluZWwgClZvY24gPSAzNy41OyAgICAgICAg"
+"ICAgICAlVGVuc2FvIGRlIGNpcmN1aXRvIGFiZXJ0byBub21pbmFsIGRvIHBhaW5lbApJbXAgPSA3L"
+"jk5OyAgICAgICAgICAgICAgJUNvcnJlbnRlIG5vIHBvbnRvIGRlIG3DoXhpbWEgcG90w6puY2lhCl"
+"ZtcCA9IDMxLjI5OyAgICAgICAgICAgICAlVGVuc8OjbyBubyBwb250byBkZSBtw6F4aW1hIHBvdMO"
+"qbmNpYQpLdiA9IC0wLjMxMzsgICAgICAgICAgICAgJUNvZWZpY2llbnRlIHTDqXJtaWNvIGRhIGNv"
+"cnJlbnRlIGRlIGN1cnRvIGNpcmN1aXRvIApLaSA9IDAuMDA0MzsgICAgICAgICAgICAgJUNvZWZpY"
+"2llbnRlIHTDqXJtaWNvIGRhIHRlbnNhbyBkZSBjaXJjdWl0byBhYmVydG8gCk5zID0gNjA7ICAgIC"
+"AgICAgICAgICAgICAlTsO6bWVybyBkZSBjw6lsdWxhcyBlbSBzw6lyaWUKTnAgPSAxOyAgICAgICA"
+"gICAgICAgICAgICVOw7ptZXJvIGRlIGPDqWx1bGFzIGVtIHBhcmFsZWxvCkduID0gMTAwMDsgICAg"
+"ICAgICAgICAgICAlSXJyYWRpYcOnw6NvIG5vbWluYWwKVG5vbSA9IDQ3ICsgMjczLjE1OyAgICAgI"
+"CVUZW1wZXJhdHVyYSBub21pbmFsIGRlIG9wZXJhw6fDo28KVF9hbWIgPSAyNSArIDI3My4xNTsgIC"
+"AgICVUZW1wZXJhdHVyYSBhbWJpZW50ZQptID0gMS4wNTsgICAgICAgICAgICAgICAgJUNvZWZpY2l"
+"lbnRlIGRlIElkZWFsaWRhZGUgZG8gZGlvZG8KUnMgPSAwLjE3MzkwMDsgICAgICAgICAgICVSZXNp"
+"c3TDqm5jaWEgc8OpcmllIGRvIHBhaW5lbApScCA9IDM3OS4wMjMzNjU7ICAgICAgICAgJVJlc2lzd"
+"MOqbmNpYSBwYXJhbGVsbyBkbyBwYWluZWwKTnNzID0gNjsgICAgICAgICAgICAgICAgJU7Dum1lcm"
+"8gZGUgcGFpbsOpaXMgZW0gc8OpcmllCk5wcCA9IDI7ICAgICAgICAgICAgICAgICAlTsO6bWVybyB"
+"kZSBwYWluw6lpcyBlbSBwYXJhbGVsbwoKJSBJbnZlcnRlciBQYXJhbWV0ZXJzClBuID0gVm1wKklt"
+"cCpOc3MqTnBwKjEuMTU7CklyID0gKFBuL1ZybXMpKnNxcnQoMik7CiUgQm9vc3QgQ29udHJvbApMb"
+"SA9IDAuOGUtMzsKUmxtID0gMWUtMjsKQ20gPSAwLjVlLTM7ClJwdm0gPSAzLjgqTnNzL05wcDsKVm"
+"JhdCA9IFZkYzsKZnNtID0gZnM7CiVHSUQgPSBWYmF0LyhMbSpzICsgUmxtKTsKZmNtMSA9IGZzbS8"
+"xMDsKZmNtMiA9IGZjbTEvNTsKS1BfSU0gPSAyKnBpKmZjbTEqTG0vVmJhdApLSV9JTSA9IDIqcGkq"
+"ZmNtMSpSbG0vVmJhdAolR1ZEID0gMS8oQ20qcyArIDEvUnB2bSk7CktQX1ZNID0gMipwaSpmY20yK"
+"kNtCktJX1ZNID0gMipwaSpmY20yKigxL1Jwdm0pCgolIFJlYWN0aXZlIFBvd2VyIENvbnRyb2wKZm"
+"MxID0gNTA7CmZjMiA9IGZjMS81OwpLUF9wcSA9IDIqcGkqZmMyLyhwaSooZmMxLWZjMikqVl9yZWR"
+"lKTsKS0lfcHEgPSAyKnBpKmZjMSpLUF9wcTsKCiUgMTVIeiBMb3ctUGFzcyBGaWx0ZXIKVDE1aHog"
+"PSAxLygyKnBpKjE1KTsKCiUgNUh6IExvdy1QYXNzIEZpbHRlcgpUNWh6ID0gMS8oMipwaSo1KTsKC"
+"golICAgUGFyYW1ldGVycyBvZiB0aGUgSGFybW9uaWMgRGV0ZWN0b3IgQmFzZWQgb24gU09HSS1QTA"
+"ogICUgRnVuZGFtZW50YWwgU09HSS1QTEwKICAgIHduX3NyZjEgPSAzKjIqcGk7CiAgICBrc2lfc3J"
+"mMSA9IDEvc3FydCgyKTsKICAgIGtwX3BsbDEgPSAyKnduX3NyZjEqa3NpX3NyZjE7CiAgICBraV9w"
+"bGwxID0gKHduX3NyZjFeMik7CiAgJSBIYXJtb25pYyBTT0dJLVBMTCAxCiAgICB3bl9zcmYyID0gM"
+"zAqMipwaTsKICAgIGtzaV9zcmYyID0gMS9zcXJ0KDIpOwogICAga3BfcGxsMiA9IDIqd25fc3JmMi"
+"prc2lfc3JmMjsKICAgIGtpX3BsbDIgPSAod25fc3JmMl4yKTsgCiAJCiAJIHRzcyA9IDAuMzsgICA"
+"gICAgICAgICAgICAgICAlU09HSSBpbml0aWFsaXphdGlvbiB0aW1lICAgCgo="
+  InitialState  "1"
+  SystemState   ""
+  CodeGenTopologies "[]"
+  CodeGenSwitchingAlgorithm "1"
+  CodeGenMatrixCodingStyle "1"
+  CodeGenParameterInlining "2"
+  CodeGenInliningExceptions "AAAACwAAAAAA"
+  CodeGenIntegerWordSize "32"
+  CodeGenAbsTimeUsageMsg "3"
+  CodeGenBaseName ""
+  CodeGenOutputDir ""
+  CodeGenExtraOpts ""
+  ExtendedMatrixPrecision "1"
+  MatrixSignificanceCheck "2"
+  Schematic {
+    Location      [0, 31; 1382, 696]
+    ZoomFactor    0.75
+    SliderPosition [0, 394]
+    ShowBrowser   on
+    BrowserWidth  71
+    Component {
+      Type          SineGenerator
+      Name          "Sine Wave"
+      Show          on
+      Position      [275, 155]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Amplitude"
+        Value         "10"
+        Show          off
+      }
+      Parameter {
+        Variable      "Bias"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Frequency"
+        Value         "2*pi*60"
+        Show          off
+      }
+      Parameter {
+        Variable      "Phase"
+        Value         "-pi/4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Units"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          SineGenerator
+      Name          "Sine Wave1"
+      Show          on
+      Position      [270, 230]
+      Direction     right
+      Flipped       off
+      Parameter {
+        Variable      "Amplitude"
+        Value         "5"
+        Show          off
+      }
+      Parameter {
+        Variable      "Bias"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Frequency"
+        Value         "2*pi*300"
+        Show          off
+      }
+      Parameter {
+        Variable      "Phase"
+        Value         "-pi/4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Units"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Sum
+      Name          "Sum1"
+      Show          off
+      Position      [410, 235]
+      Direction     up
+      Flipped       off
+      Parameter {
+        Variable      "IconShape"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Inputs"
+        Value         "++"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope"
+      Show          on
+      Position      [585, 155]
+      Direction     up
+      Flipped       off
+      Location      [0, 31; 1366, 716]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAFwA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGYA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABmAP///wAAAAMAAAVWAAAAf/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABVYAAABQAP///wAABVYAAAIPAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAL2AIAAAAFAAAAC"
+"QAAAGQAAAAHAAAAZAAAAAYAAABkAAAABAAAAGQAAAADAAAAZAAABVYAAAALAQAAAQAAAAAAAAAAAA"
+"AAAGT/////AAAAgQAAAAAAAAAIAAAAdQAAAAEAAAAAAAAAyAAAAAIAAAAAAAAAAAAAAAIAAAAAAAA"
+"AZAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAZAAAAAEAAAAAAAAAAAAAAAEAAAAAAAADUQAAAAEAAAAA"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      Axes          "2"
+      TimeRange     "0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    ""
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis   on
+        AxisLabel     "Frequency"
+        Scaling       0
+        PhaseDisplay  0
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sine Wave1"
+      SrcTerminal   1
+      Points        [335, 230; 335, 240]
+      DstComponent  "Sum1"
+      DstTerminal   3
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sine Wave"
+      SrcTerminal   1
+      Points        [360, 155]
+      Branch {
+        Points        [360, 150]
+        DstComponent  "Scope"
+        DstTerminal   1
+      }
+      Branch {
+        Points        [360, 230]
+        DstComponent  "Sum1"
+        DstTerminal   2
+      }
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sum1"
+      SrcTerminal   1
+      Points        [490, 235; 490, 160]
+      DstComponent  "Scope"
+      DstTerminal   2
+    }
+  }
+}
+DemoSignature "gcrgUPi2ZdFiQgaFW2icmYhJzHjk9GJ3NHHHDjUneQc="
